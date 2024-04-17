@@ -31,7 +31,11 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log(`Socket ${socket.id} is disconnected...`);
     });
-})
+});
+
+app.get('/', (req, res) => {
+    res.send('Doctorii Chat Server Is Running....');
+});
 
 server.listen(port, () => {
     console.log(`Server is listening to Port: ${port}`);
