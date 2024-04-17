@@ -45,9 +45,9 @@ io.on('connection', (socket) => {
     });
 });
 
-app.get('/', (req, res) => {
-    res.send('Doctorii Chat Server Is Running....');
-});
+// app.get('/', (req, res) => {
+//     res.send('Doctorii Chat Server Is Running....');
+// });
 
 server.listen(port, () => {
     console.log(`Server is listening to Port: ${port}`);
